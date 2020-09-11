@@ -1,7 +1,4 @@
 import React from 'react';
-import Amplify from 'aws-amplify'
-import config from './aws-exports'
-Amplify.configure(config)
 import { StyleSheet, Text, View } from 'react-native';
 import WelcomeScreen from './App/Screens/WelcomeScreen';
 import LoginScreen from './App/Screens/LoginScreen';
