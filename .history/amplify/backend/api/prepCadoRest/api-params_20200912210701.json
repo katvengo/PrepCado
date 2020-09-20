@@ -1,0 +1,46 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "createRecipe",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/GET",
+                    "/PUT",
+                    "/PATCH"
+                ],
+                "unauth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            }
+        }
+    ],
+    "resourceName": "prepCadoRest",
+    "apiName": "prepCadoRest",
+    "functionArns": [
+        {
+            "lambdaFunction": "createRecipe"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "amplify-prepcado-dev-210224-authRole",
+        "unAuthRoleName": "amplify-prepcado-dev-210224-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "createRecipe",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

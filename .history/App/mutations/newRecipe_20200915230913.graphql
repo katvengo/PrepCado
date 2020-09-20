@@ -1,0 +1,13 @@
+type Mutation {
+    setRecipe
+    name: '', 
+    servings: '', 
+    prepTime: '', 
+    cookTime: '', 
+    ingredients: '', 
+    category: null, 
+    description: '',
+    directions: '',
+    images: [] 
+  
+}

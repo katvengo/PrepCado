@@ -1,0 +1,14 @@
+type Mutation {
+setRecipe() {
+    createRecipe(input: {
+    name: '', 
+    servings: '', 
+    prepTime: '', 
+    cookTime: '', 
+    ingredients: '', 
+    category: null, 
+    description: '',
+    directions: '',
+    images: [] 
+  
+}

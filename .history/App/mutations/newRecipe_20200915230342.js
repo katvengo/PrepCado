@@ -1,0 +1,5 @@
+mutation createRecipe {
+    createRecipe(input: {
+        
+    })
+}
