@@ -1,0 +1,30 @@
+type User @model {
+  id: ID!
+  username: String!
+  firstName: String
+  lastName: String
+  bio: String
+  image: String
+}
+
+type Recipe
+  @model (subscriptions: { level: public })
+  @auth(rules: [
+    {allow: owner, ownerField:"owner", provider: userPools, operations:[read, create]}
+    {allow: private, provider: userPools, operations:[read, create]}
+  ])
+{
+  type: String! # always set to 'post'. used in the SortByTimestamp GSI
+  id: ID
+  owner: String
+  timestamp: AWSTimestamp
+  name: String
+  servings: String
+  prepTime: String, 
+  cookTime: String, 
+  ingredients: String, 
+  category: String,
+  description: String,
+  directions: String,
+  images: [],
+}

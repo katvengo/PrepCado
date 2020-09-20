@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "auth": {
+      "prepcado82dbf5b9": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

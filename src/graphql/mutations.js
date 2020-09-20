@@ -9,10 +9,11 @@ export const createUser = /* GraphQL */ `
     createUser(input: $input, condition: $condition) {
       id
       username
-      firstName
-      lastName
+      preferred_username
       bio
       image
+      recipes
+      Owner
       createdAt
       updatedAt
     }
@@ -26,10 +27,11 @@ export const updateUser = /* GraphQL */ `
     updateUser(input: $input, condition: $condition) {
       id
       username
-      firstName
-      lastName
+      preferred_username
       bio
       image
+      recipes
+      Owner
       createdAt
       updatedAt
     }
@@ -43,10 +45,11 @@ export const deleteUser = /* GraphQL */ `
     deleteUser(input: $input, condition: $condition) {
       id
       username
-      firstName
-      lastName
+      preferred_username
       bio
       image
+      recipes
+      Owner
       createdAt
       updatedAt
     }
@@ -61,6 +64,7 @@ export const createRecipe = /* GraphQL */ `
       type
       id
       owner
+      timestamp
       name
       servings
       prepTime
@@ -105,7 +109,7 @@ export const deleteRecipe = /* GraphQL */ `
     $condition: ModelRecipeConditionInput
   ) {
     deleteRecipe(input: $input, condition: $condition) {
-      type = "post"
+      type
       id
       owner
       timestamp

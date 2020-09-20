@@ -6,10 +6,11 @@ export const getUser = /* GraphQL */ `
     getUser(id: $id) {
       id
       username
-      firstName
-      lastName
+      preferred_username
       bio
       image
+      recipes
+      Owner
       createdAt
       updatedAt
     }
@@ -25,10 +26,11 @@ export const listUsers = /* GraphQL */ `
       items {
         id
         username
-        firstName
-        lastName
+        preferred_username
         bio
         image
+        recipes
+        Owner
         createdAt
         updatedAt
       }
@@ -51,7 +53,7 @@ export const getRecipe = /* GraphQL */ `
       category
       description
       directions
-      image
+      images
       createdAt
       updatedAt
     }
@@ -77,7 +79,7 @@ export const listRecipes = /* GraphQL */ `
         category
         description
         directions
-        image
+        images
         createdAt
         updatedAt
       }

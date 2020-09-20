@@ -6,10 +6,11 @@ export const onCreateUser = /* GraphQL */ `
     onCreateUser {
       id
       username
-      firstName
-      lastName
+      preferred_username
       bio
       image
+      recipes
+      Owner
       createdAt
       updatedAt
     }
@@ -20,10 +21,11 @@ export const onUpdateUser = /* GraphQL */ `
     onUpdateUser {
       id
       username
-      firstName
-      lastName
+      preferred_username
       bio
       image
+      recipes
+      Owner
       createdAt
       updatedAt
     }
@@ -34,10 +36,11 @@ export const onDeleteUser = /* GraphQL */ `
     onDeleteUser {
       id
       username
-      firstName
-      lastName
+      preferred_username
       bio
       image
+      recipes
+      Owner
       createdAt
       updatedAt
     }
@@ -79,7 +82,7 @@ export const onUpdateRecipe = /* GraphQL */ `
       category
       description
       directions
-      image
+      images
       createdAt
       updatedAt
     }
@@ -100,7 +103,7 @@ export const onDeleteRecipe = /* GraphQL */ `
       category
       description
       directions
-      image
+      images
       createdAt
       updatedAt
     }
