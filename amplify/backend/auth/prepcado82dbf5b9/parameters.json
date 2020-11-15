@@ -1,6 +1,6 @@
 {
     "identityPoolName": "prepcado82dbf5b9_identitypool_82dbf5b9",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "prepca82dbf5b9",
     "userPoolName": "prepcado82dbf5b9_userpool_82dbf5b9",
     "autoVerifiedAttributes": [

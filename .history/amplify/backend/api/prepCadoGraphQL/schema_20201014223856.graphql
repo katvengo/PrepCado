@@ -1,0 +1,34 @@
+type User @model (subscriptions: { level: public })
+  @auth(rules: [
+    {allow: owner, ownerField:"owner", provider: userPools, operations:[read, create]}
+    {allow: private, provider: userPools, operations:[read, create]}
+  ]) {
+  id: ID!
+  username: String!
+  preferred_username: String!
+  bio: String
+  image: String
+  recipes: [String] mountReceived: Float!
+  songs: [Song]! @connection(name: "ArtistSong", keyField: "userId")
+}
+
+type Recipe
+  @model (subscriptions: { level: public })
+  @auth(rules: [
+    {allow: owner, ownerField:"owner", provider: userPools, operations:[read, create]}
+    {allow: private, provider: userPools, operations:[read, create]}
+  ])
+{
+  type: String! # always set to 'post'. used in the SortByTimestamp GSI
+  id: ID
+  owner: String
+  name: String
+  servings: String
+  prepTime: String, 
+  cookTime: String, 
+  ingredients: String, 
+  category: String,
+  description: String,
+  directions: String,
+  images: [String],
+}

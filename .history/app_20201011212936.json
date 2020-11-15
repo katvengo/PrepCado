@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "PrepCado",
+    "slug": "PrepCado",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./App/assets/icon.jpg",
+    "splash": {
+      "image": "./App/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "packagerOpts": {
+      "config": "./rn-cli.config.js"
+      }
+  }
+}

@@ -1,20 +1,20 @@
 {
-    "dev": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-prepcado-dev-211300-authRole",
-            "UnauthRoleArn": "arn:aws:iam::050527149974:role/amplify-prepcado-dev-211300-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::050527149974:role/amplify-prepcado-dev-211300-authRole",
-            "Region": "us-west-2",
-            "DeploymentBucketName": "amplify-prepcado-dev-211300-deployment",
-            "UnauthRoleName": "amplify-prepcado-dev-211300-unauthRole",
-            "StackName": "amplify-prepcado-dev-211300",
-            "StackId": "arn:aws:cloudformation:us-west-2:050527149974:stack/amplify-prepcado-dev-211300/6a563790-f577-11ea-ac56-0adbd3611bab",
-            "AmplifyAppId": "d1zslokfjypedi"
-        },
-        "categories": {
-            "auth": {
-                "prepcado82dbf5b9": {}
-            }
-        }
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-prepcado-dev-211300-authRole",
+      "UnauthRoleArn": "arn:aws:iam::050527149974:role/amplify-prepcado-dev-211300-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::050527149974:role/amplify-prepcado-dev-211300-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-prepcado-dev-211300-deployment",
+      "UnauthRoleName": "amplify-prepcado-dev-211300-unauthRole",
+      "StackName": "amplify-prepcado-dev-211300",
+      "StackId": "arn:aws:cloudformation:us-west-2:050527149974:stack/amplify-prepcado-dev-211300/6a563790-f577-11ea-ac56-0adbd3611bab",
+      "AmplifyAppId": "d1zslokfjypedi"
+    },
+    "categories": {
+      "auth": {
+        "prepcado82dbf5b9": {}
+      }
     }
+  }
 }

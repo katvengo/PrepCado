@@ -9,8 +9,24 @@ export const onCreateUser = /* GraphQL */ `
       preferred_username
       bio
       image
-      recipes
-      Owner
+      recipes {
+        items {
+          type
+          id
+          name
+          servings
+          prepTime
+          cookTime
+          ingredients
+          category
+          description
+          directions
+          images
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
       createdAt
       updatedAt
     }
@@ -24,8 +40,24 @@ export const onUpdateUser = /* GraphQL */ `
       preferred_username
       bio
       image
-      recipes
-      Owner
+      recipes {
+        items {
+          type
+          id
+          name
+          servings
+          prepTime
+          cookTime
+          ingredients
+          category
+          description
+          directions
+          images
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
       createdAt
       updatedAt
     }
@@ -39,8 +71,24 @@ export const onDeleteUser = /* GraphQL */ `
       preferred_username
       bio
       image
-      recipes
-      Owner
+      recipes {
+        items {
+          type
+          id
+          name
+          servings
+          prepTime
+          cookTime
+          ingredients
+          category
+          description
+          directions
+          images
+          createdAt
+          updatedAt
+        }
+        nextToken
+      }
       createdAt
       updatedAt
     }
@@ -51,8 +99,18 @@ export const onCreateRecipe = /* GraphQL */ `
     onCreateRecipe {
       type
       id
-      owner
-      timestamp
+      authorObject {
+        id
+        username
+        preferred_username
+        bio
+        image
+        recipes {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
       name
       servings
       prepTime
@@ -72,8 +130,18 @@ export const onUpdateRecipe = /* GraphQL */ `
     onUpdateRecipe {
       type
       id
-      owner
-      timestamp
+      authorObject {
+        id
+        username
+        preferred_username
+        bio
+        image
+        recipes {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
       name
       servings
       prepTime
@@ -93,8 +161,18 @@ export const onDeleteRecipe = /* GraphQL */ `
     onDeleteRecipe {
       type
       id
-      owner
-      timestamp
+      authorObject {
+        id
+        username
+        preferred_username
+        bio
+        image
+        recipes {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
       name
       servings
       prepTime
