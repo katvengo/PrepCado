@@ -1,1 +1,0 @@
-import {DefaultTheme} from '@reac'
