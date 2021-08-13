@@ -29,7 +29,7 @@ function LoginScreen (props) {
           console.log(result)
           /* Once the user successfully signs in, update the form state to show the signed in state */
           const access = result.signInUserSession
-          const token = access.accessToken.jwtToken
+          /const token = access.accessToken.jwtToken
         if (!access) return setLoginFailed(true);
           setLoginFailed(false);
           auth.logIn(access);
